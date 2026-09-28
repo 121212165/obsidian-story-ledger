@@ -1,0 +1,9 @@
+{
+  "id": "story-ledger",
+  "name": "Story Ledger",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Growth-ledger for serialized fiction: register side characters, locations and open hooks into markdown tables, with a hook-reconciliation view that flags stale items.",
+  "author": "121212165",
+  "isDesktopOnly": true
+}
