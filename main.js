@@ -50,6 +50,7 @@ module.exports = class StoryLedger extends Plugin {
     this.addSettingTab(new LedgerSettingTab(this.app, this));
     this.registerView(VIEW_TYPE, (leaf) => new LedgerView(leaf, this));
   }
+  onunload() { this.app.workspace.detachLeavesOfType(VIEW_TYPE); }
   async saveSettings() { await this.saveData(this.settings); }
 
   async openLedger() {
